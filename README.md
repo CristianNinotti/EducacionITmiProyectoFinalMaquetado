@@ -56,6 +56,8 @@ Un boton para ver el mapa por completo ocultando el form de contacto.
 ##################################
 
 Animacion del titulo principal cuando se recarga la pagina o se abre por primera vez
+
+
 ![image](https://github.com/CristianNinotti/miProyectoFinal/assets/102320892/fc8cea30-db36-4ec9-9865-a87d72acaafc)
 
 
