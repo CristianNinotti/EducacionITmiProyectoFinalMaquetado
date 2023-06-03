@@ -52,6 +52,9 @@ Debajo del form, un fondo de un iframe de un map (simulando ser la ubicacion del
 
 Un boton para ver el mapa por completo ocultando el form de contacto.
 ![image](https://github.com/CristianNinotti/miProyectoFinal/assets/102320892/0706b259-3bac-4694-b631-765a405abd9e)
+
+##################################
+
 Animacion del titulo principal cuando se recarga la pagina o se abre por primera vez
 ![image](https://github.com/CristianNinotti/miProyectoFinal/assets/102320892/fc8cea30-db36-4ec9-9865-a87d72acaafc)
 
