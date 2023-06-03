@@ -1,0 +1,33 @@
+.auto{
+    grid-template-columns: repeat(auto-fit, minmax(var(--size), 1fr));
+    /* EXPLICACION:
+        repeat(cantidad,tamaño)
+        - auto-fill: encaja los elementos segun el espacio disponible.
+        - auto-fit: estira los elementos segun el espacio disponible.
+
+        minmax(min,max): determina el valor minimo y maximo de columna
+        min(a,b): calcula el valor menor de las opciones
+    */
+    gap: 1rem;
+}
+.small{
+    --size: min(100%, var(--small));
+}
+.medium{
+    --size: min(100%, var(--medium));
+}
+.large{
+    --size: min(100%, var(--large));
+}
+
+#menu img{
+    padding: 0;
+    object-fit: cover;
+}
+#menu .box li{
+    font-size: .8rem;
+    border-bottom: 2px dotted;
+}
+.box li:hover{
+    background-color: var(--warning);
+}

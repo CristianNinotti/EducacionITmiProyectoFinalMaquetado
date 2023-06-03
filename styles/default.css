@@ -1,0 +1,24 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Montserrat&family=Raleway');
+
+/* Reglas Generales */
+@import url('general.css');
+@import url('animations.css');
+@import url('extra.css');
+@import url('grid-system.css');
+
+/* Navegacion */
+@import url('navigation.css');
+
+/* Cabecera */
+@import url('header.css');
+
+/* Contenido */
+@import url('home.css');
+@import url('promos.css');
+@import url('menu.css');
+@import url('gallery.css');
+@import url('aside.css');
+
+/* Pie de pagina */
+@import url('footer.css');

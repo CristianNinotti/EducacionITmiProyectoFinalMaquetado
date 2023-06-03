@@ -1,0 +1,129 @@
+#header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    min-height: min(640px, 100vh);
+    /* MEDIDAS
+        ANCHO: definido por el contendor
+        ALTO: definido por el contenido
+    */
+    color: floralwhite; /* html 140 valores */
+    overflow: hidden;
+    text-shadow: 0 0 .5rem rgb(51,51,51);/*x y blur color*/
+    background-color: #E88; /* rgb 16.777.216 colores  dec: 0-255 | hex: 00-FF */
+    background-image: 
+        linear-gradient(
+            /*forma y direccion*/
+            30deg, 
+            /*colores*/
+            hsla(30,60%,60%, .6), /* hsl (tono, saturacion, brillo)*/
+            hsla(0,60%,40%, .6)
+        ),
+        url('../assets/foods/wine.svg'),
+        url('../assets/foods/pizza.svg'),
+        url('../assets/bg/header-background.jpg');
+    background-position: center;
+    background-size: 
+        cover,/* se estira la imagen para que cubra todo */
+        contain, /* se ajusta la imagen para que entre */
+        clamp(150px, 100%, 500px), /* establece el tamaño utilizando un minimo y maximo como referencia*/
+        cover; 
+    background-repeat: no-repeat;
+    background-attachment: 
+        fixed,
+        scroll,
+        scroll,
+        fixed;
+    /* Propiedades de Fondo (background)
+        COLOR: valor pleno (html | RGB dec y #hex | hsl)
+        IMAGE: imagen desde archivo o gradiente
+        POSITION: coordenadas de creacion (x y)
+        SIZE: tamaño para la imagen (width height)
+        REPEAT: define como debe repetirse el fondo
+        ATTACHMENT: define de donde se dibuja el fondo
+    */
+    font-size: min(calc(2vw + 1rem), 3rem);
+    /* Funciones CSS 
+        min(a, b) => determina el valor mas chico
+        calc(args) => indica al navegador una operacion
+    */
+    perspective-origin: center;
+    perspective: 10rem;
+}
+h1,
+h2,
+h3{
+    width: 100%;
+    font-family: 'resto';
+    /* Unidades de Medida
+        ABSOLUTA: limitantes
+            cm => unidad metrica
+            in => pulgadas (2.54cm)
+            pt => 1/76 pulgadas
+            pc => 1/6 pulgadas
+            px => 1/96 pulgadas puntos en pantalla
+
+        RELATIVA: tamaños y tipografia
+            % => fuente del contenedor
+            ch => ancho del caracter "0"
+            em => ancho del caracter "M"
+            ex => alto del caracter "x"
+            rem => ancho de "M" en el root (HTML)
+
+        FLEXIBLE: altos y tipografia flexible
+            vw => % ancho del viewport
+            vh => % alto del viewport
+            vmin => % del valor mas bajo
+            vmax => % del valor mas alto
+    */
+}
+h1{
+    transform: rotateX(15deg);
+    animation: intro 6s ease-out .5s;
+    /* name duration timing delay direction count */
+    animation-fill-mode: backwards;
+}
+#header p{
+    animation: intro 4.5s ease-out 2s;
+    animation-fill-mode: backwards;
+}
+
+main h2{
+    width: 100%;
+    margin: .5rem 0;
+    border-radius: .5rem;
+    padding: 1rem 2.5rem;
+    color: #eee;
+    background: linear-gradient(
+        to right,
+        hsl(0, 50%, 50%),
+        hsl(30, 50%, 50%),
+        hsl(60, 50%, 50%),
+        hsl(30, 50%, 50%),
+        hsl(0, 50%, 50%)
+    ) 500%/500%;
+    animation: translate 360s linear infinite;
+}
+/* JERARQUIA
+    tags  =   1
+    class =  10
+    id    = 100
+
+    CSS
+    .header { color: green }             10
+    #header { color: blue }             100
+    header { color: red }                 1
+    header.header{ color: black }        11
+    header#header{ color: whitesmoke }  101
+    .header#header{ color: darkgrey }   110
+    
+    HTML
+    <header id="header" class="header">
+        darkgrey
+        <div class="header">
+            Green
+            <h1>Soy un titulo (Whitesmoke)</h1>
+        </div>
+    </header>
+*/
